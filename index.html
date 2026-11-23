@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0b12" />
+
+  <title>Child Safety Standards | Matchiqo</title>
+
+  <meta
+    name="description"
+    content="Matchiqo's Child Safety Standards. Our commitment to preventing child sexual abuse, exploitation, grooming, and child sexual abuse material."
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  <style>
+    /* =========================================
+       MATCHIQO — PREMIUM CHILD SAFETY PAGE
+       ========================================= */
+
+    :root {
+      --bg: #0b0b12;
+      --bg-soft: #10101a;
+      --surface: #151522;
+      --surface-hover: #1b1b2b;
+      --border: rgba(255, 255, 255, 0.075);
+
+      --text: #f5f3ff;
+      --text-secondary: #a6a4b7;
+      --text-muted: #777587;
+
+      --primary: #a78bfa;
+      --primary-bright: #c4b5fd;
+      --primary-dark: #7c3aed;
+
+      --danger: #fb7185;
+      --danger-soft: rgba(251, 113, 133, 0.09);
+
+      --green: #34d399;
+      --green-soft: rgba(52, 211, 153, 0.10);
+
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+
+      --container: 1080px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      background:
+        radial-gradient(
+          ellipse at 50% -10%,
+          rgba(124, 58, 237, 0.18),
+          transparent 48%
+        ),
+        var(--bg);
+
+      color: var(--text);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--primary-bright);
+      outline-offset: 5px;
+      border-radius: 8px;
+    }
+
+    .container {
+      width: min(calc(100% - 40px), var(--container));
+      margin: 0 auto;
+    }
+
+    /* NAVIGATION */
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 11, 18, 0.78);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #a78bfa, #6d28d9);
+      color: #fff;
+      font-size: 21px;
+      font-weight: 800;
+      box-shadow: 0 8px 30px rgba(124, 58, 237, 0.25);
+    }
+
+    .brand-name {
+      font-size: 19px;
+      font-weight: 750;
+      letter-spacing: -0.6px;
+    }
+
+    .brand-name span {
+      color: var(--primary);
+    }
+
+    .nav-label {
+      font-size: 13px;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-label .dot {
+      width: 7px;
+      height: 7px;
+      background: var(--green);
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(52, 211, 153, 0.5);
+    }
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+      padding: 95px 0 75px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 440px;
+      height: 440px;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: radial-gradient(
+        circle,
+        rgba(139, 92, 246, 0.12),
+        transparent 70%
+      );
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 780px;
+      margin: auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 13px;
+      border-radius: 999px;
+      border: 1px solid rgba(167, 139, 250, 0.22);
+      background: rgba(167, 139, 250, 0.07);
+      color: var(--primary-bright);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+      margin-bottom: 27px;
+    }
+
+    .eyebrow svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      font-weight: 800;
+      letter-spacing: -2.8px;
+      line-height: 1.12;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 .gradient {
+      background: linear-gradient(
+        110deg,
+        #c4b5fd,
+        #a78bfa 40%,
+        #818cf8
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-description {
+      max-width: 660px;
+      margin: 0 auto;
+      color: var(--text-secondary);
+      font-size: 17px;
+      line-height: 1.9;
+    }
+
+    .hero-meta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+
+    .meta-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 14px;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .meta-pill svg {
+      width: 15px;
+      height: 15px;
+      color: var(--primary);
+    }
+
+    /* SAFETY STATEMENT */
+
+    .safety-banner {
+      position: relative;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 28px;
+      margin: 0 auto 65px;
+      border: 1px solid rgba(251, 113, 133, 0.17);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(251, 113, 133, 0.065),
+          rgba(167, 139, 250, 0.035)
+        );
+      border-radius: var(--radius-xl);
+    }
+
+    .safety-icon {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 17px;
+      background: var(--danger-soft);
+      color: var(--danger);
+    }
+
+    .safety-icon svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    .safety-banner h2 {
+      font-size: 19px;
+      font-weight: 750;
+      margin-bottom: 7px;
+      letter-spacing: -0.3px;
+    }
+
+    .safety-banner p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.85;
+    }
+
+    .safety-banner strong {
+      color: #fda4af;
+    }
+
+    /* CONTENT LAYOUT */
+
+    .section-heading {
+      margin-bottom: 28px;
+    }
+
+    .section-heading .label {
+      color: var(--primary);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      font-weight: 750;
+      margin-bottom: 9px;
+    }
+
+    .section-heading h2 {
+      font-size: 31px;
+      letter-spacing: -1px;
+      font-weight: 780;
+      line-height: 1.3;
+    }
+
+    .section-heading p {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-top: 12px;
+      max-width: 690px;
+    }
+
+    .policy-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .policy-card {
+      padding: 27px;
+      background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.035),
+        rgba(255, 255, 255, 0.012)
+      );
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+    }
+
+    .policy-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(167, 139, 250, 0.24);
+      background: var(--surface-hover);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 18px;
+    }
+
+    .card-icon {
+      width: 46px;
+      height: 46px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      color: var(--primary-bright);
+      background: rgba(167, 139, 250, 0.09);
+      border: 1px solid rgba(167, 139, 250, 0.11);
+    }
+
+    .card-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .policy-card h3 {
+      font-size: 17px;
+      font-weight: 730;
+      letter-spacing: -0.25px;
+      line-height: 1.45;
+      padding-top: 3px;
+    }
+
+    .policy-card p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.85;
+    }
+
+    .policy-card ul {
+      list-style: none;
+      margin-top: 15px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .policy-card li {
+      display: flex;
+      gap: 10px;
+      color: var(--text-secondary);
+      font-size: 13.5px;
+      line-height: 1.75;
+    }
+
+    .policy-card li::before {
+      content: "";
+      flex-shrink: 0;
+      width: 6px;
+      height: 6px;
+      margin-top: 9px;
+      border-radius: 50%;
+      background: var(--primary);
+    }
+
+    .full-width {
+      grid-column: 1 / -1;
+    }
+
+    /* RESPONSE PROCESS */
+
+    .response-section {
+      margin-top: 80px;
+    }
+
+    .response-panel {
+      padding: 35px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border);
+      background:
+        radial-gradient(
+          ellipse at top right,
+          rgba(124, 58, 237, 0.09),
+          transparent 50%
+        ),
+        var(--bg-soft);
+    }
+
+    .response-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .response-step {
+      padding: 22px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 18px;
+    }
+
+    .step-number {
+      display: inline-grid;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      background: rgba(167, 139, 250, 0.12);
+      color: var(--primary-bright);
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .response-step h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .response-step p {
+      color: var(--text-secondary);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    /* CONTACT */
+
+    .contact-section {
+      margin-top: 75px;
+    }
+
+    .contact-card {
+      position: relative;
+      overflow: hidden;
+      padding: 40px;
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(167, 139, 250, 0.2);
+      background:
+        radial-gradient(
+          ellipse at 100% 0%,
+          rgba(124, 58, 237, 0.16),
+          transparent 50%
+        ),
+        linear-gradient(145deg, #171523, #10101a);
+    }
+
+    .contact-card::after {
+      content: "";
+      position: absolute;
+      width: 230px;
+      height: 230px;
+      right: -100px;
+      bottom: -130px;
+      border-radius: 50%;
+      border: 1px solid rgba(167, 139, 250, 0.09);
+      box-shadow:
+        0 0 0 30px rgba(167, 139, 250, 0.025),
+        0 0 0 60px rgba(167, 139, 250, 0.025);
+      pointer-events: none;
+    }
+
+    .contact-content {
+      position: relative;
+      z-index: 1;
+      max-width: 690px;
+    }
+
+    .contact-card .contact-label {
+      font-size: 12px;
+      color: var(--primary-bright);
+      letter-spacing: 1.6px;
+      font-weight: 750;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .contact-card h2 {
+      font-size: 29px;
+      font-weight: 780;
+      letter-spacing: -0.9px;
+      line-height: 1.35;
+      margin-bottom: 14px;
+    }
+
+    .contact-card p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.9;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 27px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 13px 17px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.035);
+    }
+
+    .contact-item svg {
+      width: 18px;
+      height: 18px;
+      color: var(--primary-bright);
+    }
+
+    .contact-item span {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .contact-item strong {
+      display: block;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 650;
+      word-break: break-word;
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 20px;
+      margin-top: 24px;
+      border-radius: 13px;
+      background: linear-gradient(135deg, #a78bfa, #7c3aed);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 720;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+      box-shadow: 0 8px 25px rgba(124, 58, 237, 0.2);
+    }
+
+    .contact-button:hover {
+      transform: translateY(-2px);
+      opacity: 0.92;
+    }
+
+    .contact-button svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      margin-top: 80px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-inner {
+      min-height: 105px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-brand .brand-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 11px;
+      font-size: 16px;
+    }
+
+    .footer-brand span {
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .footer-note {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-align: right;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 800px) {
+      .hero {
+        padding: 75px 0 55px;
+      }
+
+      .hero h1 {
+        letter-spacing: -1.7px;
+      }
+
+      .policy-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .response-list {
+        grid-template-columns: 1fr;
+      }
+
+      .response-panel {
+        padding: 25px;
+      }
+
+      .full-width {
+        grid-column: auto;
+      }
+
+      .safety-banner {
+        padding: 22px;
+      }
+
+      .contact-card {
+        padding: 28px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: min(calc(100% - 28px), var(--container));
+      }
+
+      .nav-inner {
+        height: 67px;
+      }
+
+      .brand-icon {
+        width: 37px;
+        height: 37px;
+        border-radius: 12px;
+      }
+
+      .brand-name {
+        font-size: 17px;
+      }
+
+      .nav-label {
+        font-size: 11px;
+      }
+
+      .hero {
+        padding: 65px 0 45px;
+      }
+
+      .hero h1 {
+        font-size: 39px;
+      }
+
+      .hero-description {
+        font-size: 14px;
+      }
+
+      .hero-meta {
+        gap: 8px;
+      }
+
+      .meta-pill {
+        font-size: 11px;
+        padding: 8px 11px;
+      }
+
+      .safety-banner {
+        flex-direction: column;
+        gap: 14px;
+        margin-bottom: 50px;
+        border-radius: 21px;
+      }
+
+      .section-heading h2 {
+        font-size: 26px;
+      }
+
+      .policy-card {
+        padding: 23px;
+      }
+
+      .response-section,
+      .contact-section {
+        margin-top: 55px;
+      }
+
+      .contact-card h2 {
+        font-size: 25px;
+      }
+
+      .contact-details {
+        flex-direction: column;
+      }
+
+      .contact-item {
+        width: 100%;
+      }
+
+      .footer-inner {
+        padding: 22px 0;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-note {
+        text-align: left;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="container nav-inner">
+
+      <a href="#" class="brand" aria-label="Matchiqo home">
+        <div class="brand-icon">M</div>
+        <div class="brand-name">Match<span>iqo</span></div>
+      </a>
+
+      <div class="nav-label">
+        <span class="dot"></span>
+        Safety & Trust
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+
+        <div class="eyebrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+          Child Safety & Protection
+        </div>
+
+        <h1>
+          Safety is a priority.<br />
+          <span class="gradient">Protection is our commitment.</span>
+        </h1>
+
+        <p class="hero-description">
+          At Matchiqo, we are committed to protecting people from abuse,
+          exploitation, and harmful behavior. We maintain a zero-tolerance
+          approach to child sexual abuse and exploitation and are committed
+          to promoting a safer digital environment.
+        </p>
+
+        <div class="hero-meta">
+          <div class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                 aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 2"/>
+            </svg>
+            Effective November 23, 2026
+          </div>
+
+          <div class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                 aria-hidden="true">
+              <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/>
+            </svg>
+            Official Safety Standards
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+
+      <!-- ZERO TOLERANCE -->
+      <section class="safety-banner">
+
+        <div class="safety-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/>
+            <path d="M8 8l8 8M16 8l-8 8"/>
+          </svg>
+        </div>
+
+        <div>
+          <h2>Zero Tolerance for CSAE</h2>
+          <p>
+            <strong>Child Sexual Abuse and Exploitation (CSAE) is strictly prohibited.</strong>
+            Matchiqo does not tolerate the abuse, exploitation, sexualization,
+            grooming, or endangerment of minors in any form. Any violation of
+            these standards may result in immediate enforcement action,
+            including permanent account termination.
+          </p>
+        </div>
+
+      </section>
+
+      <!-- POLICIES -->
+      <section class="policies">
+
+        <div class="section-heading">
+          <div class="label">Our Standards</div>
+          <h2>Clear rules. Serious protection.</h2>
+          <p>
+            These standards apply to all users, accounts, interactions,
+            communications, and content associated with Matchiqo.
+            Violations are not tolerated.
+          </p>
+        </div>
+
+        <div class="policy-grid">
+
+          <!-- 01 -->
+          <article class="policy-card">
+
+            <div class="card-top">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                  <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+              </div>
+              <h3>Prohibition of CSAE</h3>
+            </div>
+
+            <p>
+              Matchiqo strictly prohibits Child Sexual Abuse and Exploitation
+              (CSAE), including any activity that facilitates, promotes,
+              encourages, or enables harm to minors.
+            </p>
+
+            <ul>
+              <li>Sexual abuse or exploitation of minors.</li>
+              <li>Sexualized content involving children.</li>
+              <li>Attempts to facilitate abuse or exploitative activities.</li>
+            </ul>
+
+          </article>
+
+          <!-- 02 -->
+          <article class="policy-card">
+
+            <div class="card-top">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                  <circle cx="12" cy="8" r="4"/>
+                  <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+                  <path d="M18 8h4M20 6v4"/>
+                </svg>
+              </div>
+              <h3>Age Restrictions</h3>
+            </div>
+
+            <p>
+              Matchiqo is designed for adults. Anyone under the age of
+              18 is prohibited from accessing or using the platform.
+            </p>
+
+            <ul>
+              <li>Users must be at least 18 years old.</li>
+              <li>Underage accounts may be restricted or removed.</li>
+              <li>Attempts to bypass age restrictions are prohibited.</li>
+            </ul>
+
+          </article>
+
+          <!-- 03 -->
+          <article class="policy-card">
+
+            <div class="card-top">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                  <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8A8.5 8.5 0 0 1 8.7 3.9a8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/>
+                </svg>
+              </div>
+              <h3>Grooming & Predatory Behavior</h3>
+            </div>
+
+            <p>
+              Any attempt to manipulate, approach, groom, solicit,
+              threaten, or exploit a minor is strictly forbidden.
+            </p>
+
+            <ul>
+              <li>Inappropriate contact or solicitation involving minors.</li>
+              <li>Manipulation, coercion, or grooming behavior.</li>
+              <li>Attempts to move exploitative interactions elsewhere.</li>
+            </ul>
+
+          </article>
+
+          <!-- 04 -->
+          <article class="policy-card">
+
+            <div class="card-top">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="4"/>
+                  <path d="M8 8l8 8M16 8l-8 8"/>
+                </svg>
+              </div>
+              <h3>CSAM Prohibition</h3>
+            </div>
+
+            <p>
+              Child Sexual Abuse Material (CSAM) is strictly prohibited,
+              including creating, uploading, sharing, distributing,
+              requesting, or promoting such material.
+            </p>
+
+            <ul>
+              <li>No creation or distribution of CSAM.</li>
+              <li>No requests for child sexual abuse material.</li>
+              <li>No attempts to use Matchiqo to facilitate CSAM.</li>
+            </ul>
+
+          </article>
+
+          <!-- 05 -->
+          <article class="policy-card">
+
+            <div class="card-top">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                  <path d="M12 3v18"/>
+                  <path d="M5 7h14"/>
+                  <path d="M5 17h14"/>
+                  <circle cx="12" cy="7" r="3"/>
+                  <circle cx="12" cy="17" r="3"/>
+                </svg>
+              </div>
+              <h3>Reporting & Enforcement</h3>
+            </div>
+
+            <p>
+              Child safety concerns and policy violations may be reported
+              through available reporting channels. Reports are taken seriously
+              and may lead to appropriate enforcement measures.
+            </p>
+
+            <ul>
+              <li>Review of reported safety concerns.</li>
+              <li>Removal of violating content where applicable.</li>
+              <li>Account restrictions, suspension, or permanent bans.</li>
+            </ul>
+
+          </article>
+
+          <!-- 06 -->
+          <article class="policy-card">
+
+            <div class="card-top">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                  <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/>
+                  <path d="M9 12h6"/>
+                  <path d="M12 9v6"/>
+                </svg>
+              </div>
+              <h3>Legal Compliance & Cooperation</h3>
+            </div>
+
+            <p>
+              Matchiqo is committed to complying with applicable child
+              protection and online safety laws and responding appropriately
+              to lawful requests from relevant authorities.
+            </p>
+
+            <ul>
+              <li>Compliance with applicable child safety laws.</li>
+              <li>Appropriate cooperation with competent authorities.</li>
+              <li>Handling safety matters in accordance with applicable law.</li>
+            </ul>
+
+          </article>
+
+        </div>
+      </section>
+
+      <!-- RESPONSE -->
+      <section class="response-section">
+
+        <div class="response-panel">
+
+          <div class="section-heading">
+            <div class="label">Our Commitment</div>
+            <h2>How we approach child safety</h2>
+            <p>
+              Protecting minors from sexual abuse and exploitation requires
+              clear rules, responsible action, and a commitment to addressing
+              reported violations.
+            </p>
+          </div>
+
+          <div class="response-list">
+
+            <div class="response-step">
+              <div class="step-number">01</div>
+              <h3>Take Reports Seriously</h3>
+              <p>
+                Safety-related reports and concerns are treated seriously
+                and assessed for appropriate action.
+              </p>
+            </div>
+
+            <div class="response-step">
+              <div class="step-number">02</div>
+              <h3>Take Appropriate Action</h3>
+              <p>
+                Violations may result in removal of content, account
+                restrictions, suspension, or permanent termination.
+              </p>
+            </div>
+
+            <div class="response-step">
+              <div class="step-number">03</div>
+              <h3>Protect & Comply</h3>
+              <p>
+                We are committed to protecting users, preventing abuse,
+                and responding to applicable legal obligations.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact-section">
+
+        <div class="contact-card">
+
+          <div class="contact-content">
+
+            <div class="contact-label">Dedicated Safety Contact</div>
+
+            <h2>Have a child safety concern?</h2>
+
+            <p>
+              If you have information regarding Child Sexual Abuse and
+              Exploitation (CSAE), suspected child exploitation, or a
+              child safety violation involving Matchiqo, please contact
+              our designated child safety representative.
+              We take these concerns seriously.
+            </p>
+
+            <div class="contact-details">
+
+              <div class="contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                  <path d="M20 7v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7"/>
+                  <path d="m4 7 8 6 8-6"/>
+                  <path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2"/>
+                </svg>
+
+                <div>
+                  <span>Child Safety Contact</span>
+                  <strong>dev.bahy1@gmail.com</strong>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                  <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/>
+                </svg>
+
+                <div>
+                  <span>Developer</span>
+                  <strong>AppSyntro</strong>
+                </div>
+              </div>
+
+            </div>
+
+            <a
+              class="contact-button"
+              href="mailto:dev.bahy1@gmail.com?subject=Matchiqo%20Child%20Safety%20Report"
+            >
+              Contact Child Safety
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                   aria-hidden="true">
+                <path d="M7 17 17 7"/>
+                <path d="M7 7h10v10"/>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-inner">
+
+      <a href="#" class="footer-brand">
+        <div class="brand-icon">M</div>
+        <span>Matchiqo</span>
+      </a>
+
+      <div class="footer-note">
+        Child Safety Standards · Effective November 23, 2026<br />
+        © 2026 AppSyntro. All rights reserved.
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
